@@ -17,6 +17,7 @@ using OData.Swagger.Services;
 using Popip.Api.Users;
 using Popip.Infrastructure.Dtos;
 using Popip.Infrastructure.Validators;
+using Popip.Infrastructure.Containers;
 using Popip.Model;
 using Popip.Service.Items;
 using Popip.Service.Users;
@@ -39,20 +40,15 @@ namespace Popip.Api
         {
             services.AddControllers(options => options.EnableEndpointRouting = false);
             services.AddOData();
-            services.AddDbContext<PopipContext>(options =>
-            {
-                options.UseSqlServer(Configuration.GetConnectionString("Default"));
-            });
+            services.AddDbContext(Configuration);
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddMvc().AddFluentValidation();
-            services.AddTransient<IValidator<ItemDto>, ItemValidator>();
-            services.AddCors(options => options.AddPolicy("AllowAnyOrigin", builder => builder.AllowAnyOrigin()));
-            #region Services
-            services.AddTransient<IItemRepository, ItemRepository>();
+            services.AddCorsConfiguration();
+            services.AddValidators();
+            services.AddRepositories();
             services.AddTransient<IItemService, ItemService>();
             services.AddTransient<IUserService, UserService>();
-            #endregion
 
 
             #region Swagger
