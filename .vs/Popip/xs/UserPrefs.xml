@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{3A669971-420D-4455-AFE2-E0B92CE94220}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Popip.Api/Startup.cs">
+    <Files>
+      <File FileName="Popip.Api/Startup.cs" Line="126" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Popip" expanded="True">
+            <Node name="Solution Items" expanded="True" />
+            <Node name="Popip.Api" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+            <Node name="Popip.Infrastructure" expanded="True">
+              <Node name="Dtos" expanded="True" />
+            </Node>
+            <Node name="Popip.Model" expanded="True">
+              <Node name="Entities" expanded="True" />
+            </Node>
+            <Node name="Popip.Service" expanded="True">
+              <Node name="Items" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Popip.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.Popip.Service.Tests FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../../TodoItemApiEnmanuel/ToDoItem2/Controllers/ItemsController.cs" line="35" column="61" endLine="35" endColumn="66" offsetX="-1" offsetY="-1" expression="items" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

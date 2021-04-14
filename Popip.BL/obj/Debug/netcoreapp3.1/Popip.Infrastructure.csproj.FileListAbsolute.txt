@@ -1,0 +1,14 @@
+/Users/alejandro/Solvex/Popip/Popip.BL/bin/Debug/netcoreapp3.1/Popip.Infrastructure.deps.json
+/Users/alejandro/Solvex/Popip/Popip.BL/bin/Debug/netcoreapp3.1/Popip.Infrastructure.dll
+/Users/alejandro/Solvex/Popip/Popip.BL/bin/Debug/netcoreapp3.1/Popip.Infrastructure.pdb
+/Users/alejandro/Solvex/Popip/Popip.BL/bin/Debug/netcoreapp3.1/Popip.Core.dll
+/Users/alejandro/Solvex/Popip/Popip.BL/bin/Debug/netcoreapp3.1/Popip.Model.dll
+/Users/alejandro/Solvex/Popip/Popip.BL/bin/Debug/netcoreapp3.1/Popip.Model.pdb
+/Users/alejandro/Solvex/Popip/Popip.BL/bin/Debug/netcoreapp3.1/Popip.Core.pdb
+/Users/alejandro/Solvex/Popip/Popip.BL/obj/Debug/netcoreapp3.1/Popip.Infrastructure.csprojAssemblyReference.cache
+/Users/alejandro/Solvex/Popip/Popip.BL/obj/Debug/netcoreapp3.1/Popip.Infrastructure.AssemblyInfoInputs.cache
+/Users/alejandro/Solvex/Popip/Popip.BL/obj/Debug/netcoreapp3.1/Popip.Infrastructure.AssemblyInfo.cs
+/Users/alejandro/Solvex/Popip/Popip.BL/obj/Debug/netcoreapp3.1/Popip.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/alejandro/Solvex/Popip/Popip.BL/obj/Debug/netcoreapp3.1/Popip.Infrastructure.csproj.CopyComplete
+/Users/alejandro/Solvex/Popip/Popip.BL/obj/Debug/netcoreapp3.1/Popip.Infrastructure.dll
+/Users/alejandro/Solvex/Popip/Popip.BL/obj/Debug/netcoreapp3.1/Popip.Infrastructure.pdb

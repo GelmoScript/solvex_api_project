@@ -1,0 +1,9 @@
+/Users/alejandro/Solvex/Popip/Popip.Core/bin/Debug/netcoreapp3.1/Popip.Core.deps.json
+/Users/alejandro/Solvex/Popip/Popip.Core/bin/Debug/netcoreapp3.1/Popip.Core.dll
+/Users/alejandro/Solvex/Popip/Popip.Core/bin/Debug/netcoreapp3.1/Popip.Core.pdb
+/Users/alejandro/Solvex/Popip/Popip.Core/obj/Debug/netcoreapp3.1/Popip.Core.csprojAssemblyReference.cache
+/Users/alejandro/Solvex/Popip/Popip.Core/obj/Debug/netcoreapp3.1/Popip.Core.AssemblyInfoInputs.cache
+/Users/alejandro/Solvex/Popip/Popip.Core/obj/Debug/netcoreapp3.1/Popip.Core.AssemblyInfo.cs
+/Users/alejandro/Solvex/Popip/Popip.Core/obj/Debug/netcoreapp3.1/Popip.Core.csproj.CoreCompileInputs.cache
+/Users/alejandro/Solvex/Popip/Popip.Core/obj/Debug/netcoreapp3.1/Popip.Core.dll
+/Users/alejandro/Solvex/Popip/Popip.Core/obj/Debug/netcoreapp3.1/Popip.Core.pdb
