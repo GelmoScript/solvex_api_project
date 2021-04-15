@@ -39,36 +39,48 @@ namespace Popip.Service.Items
 
         public IEntityValidatorResult<ItemDto> Create(ItemDto itemDto)
         {
-            var validationResult = _validator.Validate(itemDto);
-            if (!validationResult.IsValid)
-                return new EntityValidatorResult<ItemDto>
-                {
-                    Entity = itemDto,
-                    IsValid = false,
-                    Errors = validationResult.Errors.Select(x => x.ErrorMessage)
-                };
+            if (itemDto == null) throw new ArgumentNullException(nameof(itemDto));
+            //var validationResult = _validator.Validate(itemDto);
+            //if (!validationResult.IsValid)
+            //    return new EntityValidatorResult<ItemDto>
+            //    {
+            //        Entity = itemDto,
+            //        IsValid = false,
+            //        Errors = validationResult.Errors.Select(x => x.ErrorMessage)
+            //    };
 
-            var isItemCreated = _itemRepository.GetAll()
-                .Any(x => x.Name.Equals(itemDto.Name));
+            //var isItemCreated = _itemRepository.GetAll()
+            //    .Any(x => x.Name.Equals(itemDto.Name));
 
-            if (isItemCreated)
-                return new EntityValidatorResult<ItemDto>
-                {
-                    Entity = itemDto,
-                    IsValid = false,
-                    Errors = new List<string>
-                    {
-                        "This item already exist"
-                    }
-                };
+            //if (isItemCreated)
+            //    return new EntityValidatorResult<ItemDto>
+            //    {
+            //        Entity = itemDto,
+            //        IsValid = false,
+            //        Errors = new List<string>
+            //        {
+            //            "This item already exist"
+            //        }
+            //    };
 
-            var item = _mapper.Map<Item>(itemDto);
+            //var item = _mapper.Map<Item>(itemDto);
+            var item = new Item
+            {
+                Name = itemDto.Name,
+                Description = itemDto.Description
+            };
             item = _itemRepository.Create(item);
-            itemDto = _mapper.Map<ItemDto>(item);
+            //itemDto = _mapper.Map<ItemDto>(item);
+
+            var itemDtoResult = new ItemDto
+            {
+                Name = item.Name,
+                Description = item.Description
+            };
 
             return new EntityValidatorResult<ItemDto>
             {
-                Entity = itemDto,
+                Entity = itemDtoResult,
                 IsValid = true
             };
         }
