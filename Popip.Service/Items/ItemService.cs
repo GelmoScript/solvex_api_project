@@ -99,7 +99,7 @@ namespace Popip.Service.Items
                     }
                 };
 
-            var item = _itemRepository.GetById(id);
+            var item = _mapper.Map<Item>(itemDto);
             item = _itemRepository.Update(item);
             itemDto = _mapper.Map<ItemDto>(item);
 
@@ -114,7 +114,7 @@ namespace Popip.Service.Items
         {
             var item = _itemRepository.GetById(id);
 
-            if (item != null)
+            if (item == null)
                 return new EntityValidatorResult<ItemDto>
                 {
                     Entity = _mapper.Map<ItemDto>(item),

@@ -21,7 +21,7 @@ namespace Popip.Model.Repositories
 
         public Item Delete(int id)
         {
-            var itemToDelete = GetAll().FirstOrDefault(x => x.Id == id);
+            var itemToDelete = GetById(id);
             itemToDelete.IsDeleted = true;
             itemToDelete.DetetedDate = DateTime.Now;
             _itemContext.SaveChanges();
@@ -42,8 +42,10 @@ namespace Popip.Model.Repositories
 
         public Item Update(Item item)
         {
+            var entry = GetById(item.Id);
             item.UpdateDate = DateTime.Now;
-            _itemContext.Items.Update(item);
+            _itemContext.Entry(entry).CurrentValues.SetValues(item);
+            //_itemContext.Items.Update(item);
             _itemContext.SaveChanges();
             return item;
         }

@@ -56,7 +56,6 @@ namespace Popip.Api.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Policy = Policies.Admin)]
         public IActionResult Delete(int id)
         {
             var itemResult = _itemService.Delete(id);
